@@ -1,0 +1,200 @@
+.layout {
+  width: 100%;
+height: 100vh;
+  display: grid;
+  grid:
+    "header header " 50px
+    "leftSide body " 1fr
+    / 260px 1fr ;
+  /* gap: 1px; */
+}
+
+.header {
+  grid-area: header;
+}
+.leftSide {
+  grid-area: leftSide;
+  background: red;
+
+}
+.body {
+  grid-area: body;
+}
+/* .rightSide {
+  grid-area: rightSide;
+}
+.footer {
+  grid-area: footer;
+} */
+
+/* NAVEGACION */
+
+.Navs {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.TittleNav {
+    display: flex;
+    align-items: center;
+  background-color: #4b6489;
+  color: white;
+  height: 50px;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border-top-right-radius: 15px; */
+  border-bottom-right-radius: 15px;
+  flex: 1;
+}
+
+.NavImage {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.BuscarNav {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex: 2;
+  padding: 0 20px;
+}
+
+.BuscarNav input {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border: none;
+  border-radius: 5px;
+}
+
+.PerfilNav {
+  display: flex;
+    align-items: center;
+    font-size: 22px;
+    gap: 15px;
+    color: rgb(211, 208, 208);
+  flex: 1;
+  padding: 0 20px;
+  justify-content: flex-end;
+}
+
+
+/* SIDEBAR */
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  background-color: #4b6489;
+  padding: 10px 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-perfil{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.ImgPerfil{
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.card-perfil h2{
+    font-weight: bold;
+}
+
+
+.card-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.card-item:hover{
+    background-color: #445a7a;
+}
+
+.listItemBar{
+    display: flex;
+    flex-direction: column;
+    flex: 1px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* PANEL */
+
+.panel{
+
+    padding: 15px;
+
+}
+
+.card-case-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.PanelCard{
+  display: flex;
+  gap: 10px;
+  padding: 2px;
+  height: 60px;
+  width: 100%;
+justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.CrearTicket{
+  background-color: #4184e9;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.PanelBienvenida{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
