@@ -1,6 +1,6 @@
 import '../assets/CrearTk.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import axiosClient from '../api/client';
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
@@ -8,6 +8,7 @@ import { AuthContext } from '../context/AuthContext';
 const CrearTicket = () => {
 
     const { user } = useContext(AuthContext);
+const navigate = useNavigate();
 
     const [crearTicket, setTicket] = useState({
         titulo: '',
@@ -25,6 +26,9 @@ const CrearTicket = () => {
         }
         catch (error) {
             console.error('Error al crear el ticket:', error);
+        }
+        finally{
+            navigate("/dashboard");
         }
     };
 

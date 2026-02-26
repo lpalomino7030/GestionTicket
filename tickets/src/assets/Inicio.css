@@ -188,13 +188,42 @@ justify-content: space-between;
   justify-content: space-between;
 }
 
+/* Lista Tickets */
 
+.ListaTicket{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
 
+.header-lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.header-lista h1{
+    font-size: 16px;
+}
 
+.ver-todos{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
 
+.ver-todos p, .codigotk{
+color: #4184e9;
+}
 
-
-
-
+.type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px;
+    gap: 5px;
+    font-weight: bold;
+}
 

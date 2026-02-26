@@ -3,6 +3,8 @@ import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { Link } from "react-router-dom";
 
+import ListaTicket from "../components/ListaTicket";
+
 const PanelInicio =  ( ) => {
 const { user } = useContext(AuthContext);
 
@@ -49,6 +51,9 @@ const { user } = useContext(AuthContext);
           cant={3}
           style={{ backgroundColor: "#f1b6b6" }}
         />
+      </div>
+      <div>
+        <ListaTicket/>
       </div>
     </div>
   );

@@ -88,3 +88,8 @@
     background-color: #007bff;
     color: white;
 }
+
+.FormCreateTk label{
+    font-weight: bold;
+
+}
