@@ -1,18 +1,27 @@
 import CardCaseItem from "../components/CardCaseItem";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { Link } from "react-router-dom";
 
-const PanelInicio = ({ usuario }) => {
+const PanelInicio =  ( ) => {
+const { user } = useContext(AuthContext);
+
+  if (!user) return <p>Cargando...</p>;
+
   return (
     <div className="Inicio panel">
       <div className="PanelBienvenida">
         <div>
-          <h1>¡Bienvenido, {usuario}!</h1>
+          <h1>¡Bienvenido, {user.nombres}!</h1>
           <p>
             Aqui puedes Gestionar y dar seguimientos a los tickets de soporte
             tecnico.
           </p>
         </div>
         <div>
-          <button type="button" className="CrearTicket">+   Crear Ticket</button>
+          <Link to="/dashboard/crear-ticket">
+            <button className="CrearTicket">+   Crear Ticket</button>
+          </Link>
         </div>
       </div>
       <div className="PanelCard">

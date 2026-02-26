@@ -6,7 +6,7 @@ import Navegacion from "../components/navegacion";
 import Panel from "../components/Panel";
 import Sidebar from "../components/SideBar";
 import PanelInicio from "./PanelInicio";
-
+import CrearTicket from "./CrearTitcket";
 const Dashboard = () =>{
     return(
 <section className="layout">
@@ -15,7 +15,8 @@ const Dashboard = () =>{
   <div className="body">
     {/* <Panel/> */}
         <Routes>
-        <Route path="/" element={<PanelInicio usuario="Luis Palomino" />} />
+        <Route path="/" element={<PanelInicio />} />
+        <Route path="/crear-ticket" element={<CrearTicket />} />
         {/* <Route path="/dashboard/" element={<PanelInicio />} /> */}
       </Routes>
   </div>
