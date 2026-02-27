@@ -21,6 +21,8 @@ const CrearTicket = () => {
 
   const [usuarioAsignar, setusuarioAsignar] = useState([]);
 
+  const [estadosAsignar, setEstadosAsignar] = useState([]);
+
   // const CreateTicket = async (e) => {
   //     e.preventDefault();
   //     try {
@@ -41,11 +43,12 @@ const CrearTicket = () => {
         try {
           const response = await axiosClient.get(`/tickets/${id}`);
           const Tecnicos = await axiosClient.get("/users/tecnicos");
-
+          const Estados = await axiosClient.get("/tickets/estados");
           const ticketData = response.data;
           const tecnicoData = Tecnicos.data;
 
           setusuarioAsignar(tecnicoData);
+          setEstadosAsignar(Estados.data);
 
           setTicket({
             titulo: ticketData.titulo,
@@ -193,7 +196,13 @@ const CrearTicket = () => {
               required
             >
               <option value="">Selecciona Estado</option>
-              
+              {
+                estadosAsignar.map((estado) => (
+                  <option key={estado.id_estado} value={estado.id_estado}>
+                    {estado.nombre}
+                  </option>
+                ))
+              }
             </select>
           </div>
 
