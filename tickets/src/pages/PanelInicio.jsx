@@ -4,6 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 import { Link } from "react-router-dom";
 
 import ListaTicket from "../components/ListaTicket";
+import HistoricoActividad from "../components/HistoricoActividad";
 
 const PanelInicio =  ( ) => {
 const { user } = useContext(AuthContext);
@@ -52,8 +53,9 @@ const { user } = useContext(AuthContext);
           style={{ backgroundColor: "#f1b6b6" }}
         />
       </div>
-      <div>
+      <div className="BodyPanel">
         <ListaTicket/>
+        <HistoricoActividad/>
       </div>
     </div>
   );

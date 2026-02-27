@@ -50,7 +50,7 @@
 
 #titulo,
 #descripcion,
-#prioridad,
+#prioridad,#Tecnico,
 #categoria {
     padding: 10px;
     border: 1px solid #ccc;
