@@ -8,6 +8,7 @@ import Sidebar from "../components/SideBar";
 import PanelInicio from "./PanelInicio";
 import CrearTicket from "./CrearTitcket";
 import Tickets from "./Tickets";
+import Configuracion from "./Configuracion";
 
 const Dashboard = () =>{
     return(
@@ -21,6 +22,7 @@ const Dashboard = () =>{
         <Route path="/crear-ticket" element={<CrearTicket />} />
         <Route path="/tickets/" element={<Tickets />} />
         <Route path="/tickets/:id" element={<CrearTicket />} />
+        <Route path="/Configuracion" element={<Configuracion />} />
 
       </Routes>
   </div>
