@@ -67,7 +67,7 @@ const Login = () => {
           <p className="relogin">¿Olvidaste Tu Contraseña?</p>
         </form>
         <p className="footerLogin">
-          {" "}
+          
           Sistema de Gestión de Tickets -  2026
         </p>
       </div>

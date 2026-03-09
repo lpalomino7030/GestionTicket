@@ -9,6 +9,8 @@ import PanelInicio from "./PanelInicio";
 import CrearTicket from "./CrearTitcket";
 import Tickets from "./Tickets";
 import Configuracion from "./Configuracion";
+import Settings from "./Settings";
+import Reporte from "./Reporte";
 
 const Dashboard = () =>{
     return(
@@ -22,8 +24,11 @@ const Dashboard = () =>{
         <Route path="/crear-ticket" element={<CrearTicket />} />
         <Route path="/tickets/" element={<Tickets />} />
         <Route path="/tickets/:id" element={<CrearTicket />} />
-        <Route path="/Configuracion" element={<Configuracion />} />
 
+
+<Route path="/configuracion" element={<Settings />} />
+      <Route path="/reportes" element={<Reporte />} />
+      
       </Routes>
   </div>
 
