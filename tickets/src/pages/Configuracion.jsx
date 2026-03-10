@@ -21,7 +21,7 @@ const Configuracion = () => {
             <p className='fontBlack'>NombreDelUsuario</p>
             <p className='fontOrange'>cargoDelUsuario</p>
           </div>
-          <div>
+          <div className='PanelPerfilInfo'>
             <InfoUsuario
               txtTitle={"CORREO ELECTRONICO"}
               txtInfo={"correo@ejemplo.com"}
@@ -29,7 +29,7 @@ const Configuracion = () => {
             <InfoUsuario txtTitle={"CONTRASEÑA"} txtInfo={"*********"} />
             <InfoUsuario txtTitle={"NUMERO DNI"} txtInfo={"70300000"} />
           </div>
-          <div>
+          <div className='PanelPerfilBtn'>
             <button className='btn editarPefil fontOrange'>Editar Perfil</button>
             <button className='btn seguridad fontBlack'>Seguridad</button>
           </div>
@@ -37,7 +37,7 @@ const Configuracion = () => {
         <div className='PreferPanel'>
           <div>
             <h3>Preferencias de interfaz</h3>
-            <div>
+            <div className='ItemPreference'>
               <div>ICONO</div>
               <div>
                 <p>Modo Oscuro</p>
@@ -47,7 +47,7 @@ const Configuracion = () => {
                 <input type="checkbox" name="" id="ModoTema" />
               </div>
             </div>
-            <div>
+            <div className='ItemPreference'>
               <div>ICONO</div>
               <div>
                 <p>Idioma del sistema</p>
@@ -65,7 +65,7 @@ const Configuracion = () => {
       </div>
 
       <div className='botoneraConfig'>
-        <div className='btn fontGrayInfo'>Cancelar</div>
+        <div className='btnCancelar'>Cancelar</div>
         <div className=' btnGuardar'>Guardar Cambios</div>
       </div>
 
