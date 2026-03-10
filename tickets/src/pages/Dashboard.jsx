@@ -26,7 +26,7 @@ const Dashboard = () =>{
         <Route path="/tickets/:id" element={<CrearTicket />} />
 
 
-<Route path="/configuracion" element={<Settings />} />
+<Route path="/configuracion" element={<Configuracion />} />
       <Route path="/reportes" element={<Reporte />} />
       
       </Routes>

@@ -1,0 +1,142 @@
+.configuracion,
+.titleConfig,
+.infoUsuario {
+  display: flex;
+  flex-direction: column;
+}
+
+.configuracion {
+  height: 100%;
+  padding: 15px;
+}
+
+.titleConfig {
+  padding: 15px 0;
+}
+
+.titleConfig h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.titleConfig p {
+  font-size: 14px;
+  color: #666;
+}
+
+.fontGrayInfo {
+  font-size: 12px;
+  color: #bbb2b2;
+  font-weight: bold;
+}
+
+.fontBlackInfo {
+  font-size: 14px;
+  color: #504a4a;
+  font-weight: bold;
+}
+
+.fontOrange {
+  color: rgb(255, 187, 0);
+  font-weight: bold;
+}
+.fontBlack {
+  color: #504a4a;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+}
+
+.editarPefil {
+  background-color: #f0dabaa4;
+}
+
+.BodyConfig {
+  display: flex;
+  flex-direction: row;
+}
+.configImgPerfil {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f7a935;
+}
+.PerfilDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.DangerZone {
+  border: 1px dashed red;
+  padding: 10px;
+  color: rgb(211, 25, 25);
+  display: flex;
+  border-radius: 10px;
+  gap: 10px;
+}
+.borderDanger {
+  border: 3px solid red;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.borderDanger:hover {
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
+
+.EstadoCuenta {
+  background-color: #eedec5a4;
+  border-radius: 10px;
+  border: 1px solid #f1d8b3b7;
+  padding: 10px;
+}
+
+.footerConfig {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.PerfilPanel {
+  flex: 1;
+}
+
+.PreferPanel {
+  flex: 1;
+}
+
+.botoneraConfig {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.btnGuardar {
+  background-color: #f7a935;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.btnGuardar {
+  background-color: #f7a935;
+}

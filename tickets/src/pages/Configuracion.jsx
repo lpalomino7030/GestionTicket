@@ -1,8 +1,12 @@
+import './config.css';
+import rostro from "../assets/rostro.avif";
+
+
 const Configuracion = () => {
   return (
-    <>
-      <div>
-        <p>Configuracion y Perfil</p>
+    <div className="configuracion">
+      <div className='titleConfig'>
+        <h3>Configuracion y Perfil</h3>
         <p>
           Administra tu identidad digital y preferencias del ecosistema
           'nombreEmpresa'
@@ -10,29 +14,29 @@ const Configuracion = () => {
       </div>
       {/* -- */}
 
-      <div>
-        <div>
-          <div>
-            {/* <img src="" alt="" /> */}
-            <p>NombreDelUsuario</p>
-            <p>cargoDelUsuario</p>
+      <div className='BodyConfig'>
+        <div className='PerfilPanel'>
+          <div className='PerfilDescription'>
+             <img className='configImgPerfil' src={rostro} alt="rostro" /> 
+            <p className='fontBlack'>NombreDelUsuario</p>
+            <p className='fontOrange'>cargoDelUsuario</p>
           </div>
           <div>
             <InfoUsuario
-              txtTitle={"Correo Electronico"}
+              txtTitle={"CORREO ELECTRONICO"}
               txtInfo={"correo@ejemplo.com"}
             />
-            <InfoUsuario txtTitle={"Contraseña"} txtInfo={"*********"} />
-            <InfoUsuario txtTitle={"Numero DNI"} txtInfo={"70300000"} />
+            <InfoUsuario txtTitle={"CONTRASEÑA"} txtInfo={"*********"} />
+            <InfoUsuario txtTitle={"NUMERO DNI"} txtInfo={"70300000"} />
           </div>
           <div>
-            <button>Editar Perfil</button>
-            <button>Seguridad</button>
+            <button className='btn editarPefil fontOrange'>Editar Perfil</button>
+            <button className='btn seguridad fontBlack'>Seguridad</button>
           </div>
         </div>
-        <div>
+        <div className='PreferPanel'>
           <div>
-            <p>Preferencias de interfaz</p>
+            <h3>Preferencias de interfaz</h3>
             <div>
               <div>ICONO</div>
               <div>
@@ -60,36 +64,36 @@ const Configuracion = () => {
         </div>
       </div>
 
-      <div>
-        <div>Cancelar</div>
-        <div>Guardar Cambios</div>
+      <div className='botoneraConfig'>
+        <div className='btn fontGrayInfo'>Cancelar</div>
+        <div className=' btnGuardar'>Guardar Cambios</div>
       </div>
 
       {/* -- */}
-      <div>
-        <div>
-          <p>Estado de Cuenta</p>
-          <p>tu cuenta esta verificada y activa.</p>
+      <div className='footerConfig'>
+        <div className='EstadoCuenta'>
+          <h4 className='fontBlack'>Estado de Cuenta</h4>
+          <p className='fontGrayInfo' >tu cuenta esta verificada y activa.</p>
         </div>
-        <div>
+        <div className='DangerZone'>
           <div>
-            <p>Zona de Riesgo</p>
-            <p>una vez desactivada la cuenta no hay marcha atras.</p>
+            <h4>Zona de Riesgo</h4>
+            <p className='fontGrayInfo'>una vez desactivada la cuenta no hay marcha atras.</p>
           </div>
-          <div>
-            <div>Desactivar cuenta</div>
+          <div className='borderDanger'>
+            <p>Desactivar cuenta</p>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 const InfoUsuario = ({ txtTitle, txtInfo }) => {
   return (
-    <div>
-      <p>{txtTitle}</p>
-      <p>{txtInfo}</p>
+    <div className="infoUsuario">
+      <p className='fontGrayInfo'>{txtTitle}</p>
+      <p className='fontBlackInfo'>{txtInfo}</p>
     </div>
   );
 };
