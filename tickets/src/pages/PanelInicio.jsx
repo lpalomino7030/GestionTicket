@@ -28,9 +28,6 @@ const PanelInicio =  ( ) => {
     fetchCantEstados();
   }, []);
 
-console.log(cantEstados);
-
-
 const { user } = useContext(AuthContext);
 
   if (!user) return <p>Cargando...</p>;
