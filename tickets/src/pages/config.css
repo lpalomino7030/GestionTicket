@@ -186,8 +186,16 @@
 .btnGuardar:hover {
   background-color: #f3af1c;
 }
-
-
+.inputPass{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.inputPass input{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
 
 
